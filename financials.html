@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>EV Charging Financial Model | VOLTERRA EV</title><meta name="description" content="Investor project website for a scalable EV charging station business.">
+<link rel="stylesheet" href="assets/style.css"></head><body>
+
+    <nav class="nav"><div class="container nav-inner">
+      <a class="brand" href="index.html"><span class="logo">⚡</span><span>VOLTERRA<span style="color:var(--green)"> EV</span></span></a>
+      <button class="menu">☰</button>
+      <div class="navlinks">
+        <a class="" href="index.html">Overview</a>
+        <a class="" href="business.html">Business</a>
+        <a class="" href="technology.html">Technology</a>
+        <a class="" href="impact.html">ESG Impact</a>
+        <a class="active" href="financials.html">Financials</a>
+        <a class="" href="roadmap.html">Roadmap</a>
+        <a class="btn primary" href="investor.html">Investor Contact</a>
+      </div>
+    </div></nav>
+    <main>
+<section class="page-hero"><div class="container reveal"><span class="tag">FINANCIAL MODEL</span><h1>See how utilization changes the <span>economics.</span></h1><p style="max-width:760px;color:var(--muted);font-size:18px">The model below is illustrative. Adjust capacity, utilization and realized price to explore a simplified operating scenario.</p></div></section>
+<section><div class="container"><div class="form-card reveal" id="calc"><div class="calc-grid">
+<div><div class="field"><label>Installed capacity (kW)</label><input id="capacity" type="number" value="240" min="20" step="10"></div><div class="field" style="margin-top:18px"><label>Utilization: <span id="utilLabel">20%</span></label><input id="util" class="range" type="range" value="20" min="5" max="80"></div><div class="field" style="margin-top:18px"><label>Realized charging revenue: <span id="priceLabel">₹20/kWh</span></label><input id="price" class="range" type="range" value="20" min="8" max="35"></div></div>
+<div class="calc-result"><small>Estimated annual energy sold</small><strong id="outEnergy">0 MWh</strong><hr style="border:0;border-top:1px solid rgba(255,255,255,.08);margin:22px 0"><small>Charging + other revenue</small><strong id="outRevenue">₹0 L</strong><hr style="border:0;border-top:1px solid rgba(255,255,255,.08);margin:22px 0"><small>Illustrative EBITDA after assumed variable + fixed costs</small><strong id="outProfit">₹0 L</strong></div>
+</div><p style="color:var(--muted);font-size:12px;margin-top:20px">Illustrative assumptions: 8,760 hours/year; 5% other revenue; 55% variable energy cost; ₹1.8 lakh/month fixed operating cost. Excludes financing, depreciation and tax.</p></div></div></section>
+<section><div class="container"><div class="section-head reveal"><div class="kicker">Indicative capex</div><h2>Capital is deployed into revenue-generating infrastructure.</h2></div>
+<div class="table-wrap reveal"><table><thead><tr><th>Investment head</th><th>Illustrative range</th><th>Comment</th></tr></thead><tbody>
+<tr><td>DC fast chargers</td><td>₹18–35 lakh</td><td>Power rating and OEM dependent</td></tr>
+<tr><td>AC chargers</td><td>₹2–6 lakh</td><td>Quantity/specification dependent</td></tr>
+<tr><td>Electrical infrastructure</td><td>₹8–18 lakh</td><td>Connection, transformer/panel/cabling dependent</td></tr>
+<tr><td>Civil works & canopy</td><td>₹5–12 lakh</td><td>Site-specific</td></tr>
+<tr><td>Software / CCTV / networking</td><td>₹2–5 lakh</td><td>Hardware + integration</td></tr>
+<tr><td>Pre-opening & contingency</td><td>₹4–8 lakh</td><td>Due diligence + reserve</td></tr>
+<tr><td><b>Indicative total</b></td><td><b>₹40–87 lakh</b></td><td>Illustrative only; vendor quotes required</td></tr>
+</tbody></table></div></div></section>
+</main>
+    <footer><div class="container footer-inner">
+      <div><b style="color:#dcebf3">VOLTERRA EV</b><br>Building dependable charging infrastructure for the electric mobility era.</div>
+      <div>Investor Project Website • <span id="year"></span></div>
+    </div></footer>
+    <script src="assets/app.js"></script></body></html>
